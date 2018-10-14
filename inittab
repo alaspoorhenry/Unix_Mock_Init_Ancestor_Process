@@ -1,0 +1,11 @@
+# Example inittab for assignment three, running various silly programs
+
+:once:echo Hello, inittab-using world    # This comment is not output
+4:once:echo Aha, run-level four!
+:respawn:/cmsfaculty/ajr/b09/a3/listener -p 1487 /bin/echo $USER says that this is the end of the internet. \ Please turn around.
+
+12:respawn:/cmsfaculty/ajr/b09/a3/listener -p 1485 /cmsfaculty/ajr/b09/a3/sillyshell
+123:respawn:/cmsfaculty/ajr/b09/a3/listener -p 1480 /cmsfaculty/ajr/eliza/eliza
+
+# enable 'biff' only on 'mathlab', not a workstation, and send yourself some e-mail
+#12:respawn:/cmsfaculty/ajr/b09/a3/biff

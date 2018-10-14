@@ -1,0 +1,5 @@
+a:once:echo Hello, inittab-using world    # This comment is not output
+4:once:echo Aha, run-level four!
+:respawn:echo more more
+#:respawn:/cmsfaculty/ajr/b09/a3/listener -p 5870 /bin/echo $USER says that this is the end of the internet. \ Please turn around.
+:once:echo more things to echo
